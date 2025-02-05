@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+.content-div {
+  background-image: url("/assets/workImg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  transition: background-image 0.5s ease;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+    to right, rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  );
+}
+
+.content-div2 {
+  background-image: url("/assets/realestate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  transition: background-image 0.5s ease;
+}
+
+.content-div2:hover {
+  background-image: linear-gradient(
+    to right, rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  );
+}
